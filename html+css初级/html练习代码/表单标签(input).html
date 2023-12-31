@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 使用shift+alt+f进行对齐 -->
+    <!-- form是表单域标签，action是需要提交数据的地址 -->
+    <form action="">
+        <!-- 一般在登录界面使用比如输入密码账号等 -->
+        <!-- 或者搜索界面、注册界面 -->
+        <!-- 首先是Input标签,可以加上placeholder属性提示用户输入什么 -->
+        文本框:<input type="text" placeholder="输入账号">
+        <!-- 这里的text用于单行输入文本(输入账号)，可以在前面写文字 -->
+        <br>
+        <br>
+        密码:<input type="password" placeholder="输入密码">
+        <!-- 这里的type后面写上了password标签，为输入密码显示为点 -->
+
+        <br>
+        <br>
+
+        <!-- 然后是单选框，如选择性别，只能选择其中一个，这个时候需要用到name属性进行分组，相同的属性为一组，也就是说，性别的name必须是一样的单词才能实现单一选择，一组中只能有一个被选中-->
+        <!-- checked在input是默认选中属性，这里是女性默认选中 -->
+        单选框:<input type="radio" name="sex">男 <input type="radio" name="sex" id="" checked>女
+        <br>
+
+        <!-- 多选框，也可以实现用户条款勾选 -->
+        多选框(比如用户条款):<input type="checkbox" checked>
+        <br>
+
+        <!-- 上传文件，multiple属性可以实现多文件选中 -->
+        上传文件:<input type="file" name="" id="" multiple>
+        <br>
+        <br>
+
+        <!-- 下面就是按钮，按钮的写法还是建议使用button-->
+        <!-- 提交按钮(如免费注册)，放在表单域标签。使用value属性可以实现按钮内部写上字体-->
+        提交按钮:<input type="submit" value="免费注册">
+        <br>
+
+        <!-- 重置按钮，放在表单域标签 -->
+        <!-- 这里可以套用button里面的重置按钮 -->
+        <button type="reset">重置按钮</button>
+        <!-- 重置按钮:<input type="reset"> -->
+        <br>
+
+        <!-- 普通按钮，默认没有功能,使用value添加按钮显示文字 -->
+        普通按钮:<input type="button" value="显示文字">
+        <br>
+    </form>
+
+</body>
+
+</html>

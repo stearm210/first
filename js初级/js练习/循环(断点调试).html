@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 每次写完循环之后可以在浏览器的sources中进行断点测试(先使用f12查看console) -->
+    <!-- 首先双击进入需要测试的文件 -->
+    <!-- 断点测试：需要在哪行打上断点，就点击哪行的行标 -->
+    <!-- 想进行下一步 ，按下最右边边框上面一横排的“向下的箭头”-->
+    <!-- 执行完一次循环之后可以在console中查看输出结果 -->
+    <script>
+        var i=0;
+        for(i=0;i<5;i++){
+            console.log('循环输出');
+        }
+
+        // 网页设计时，可以让用户控制循环的次数
+        var num=prompt('输入想要循环的次数');
+        for(var j=0;j<num;j++){
+            console.log('用户控制的循环次数');
+        }
+
+        // 输出不同的代码
+        var x=0;
+        for(x=0;x<100;x++){
+            console.log('今年'+x+'岁');
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

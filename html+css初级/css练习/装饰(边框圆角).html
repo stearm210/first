@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            margin: 50px auto;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+
+            /* 半径为10px的圆 */
+            /* 只有一个值表示4个角是相同的 */
+            /* border-radius: 10px; */
+            
+            /* 从左上角开始按照顺时针依次变化四个角 */
+            /* border-radius: 10px,20px,40px,80px; */
+
+            /* 如果是三个值，还是按照分配方式先顺时针分配,等到最后一个没有值的时候，就看对角线是多少 */
+            /* 这里左下角的对角线是右上角，所以左下角的值与右上角的值是一样的40px */
+            border-radius: 10px,40px,80px;
+
+            /* 遇到两个元素，也是一样的 */
+        }
+    </style>
+</head>
+<body>
+    <!-- 圆角边框为了使盒子四个角变得圆润，增加细节 -->
+    <!-- 属性名：border-radius -->
+    <!-- 常见的取值是：数字+px、百分比 -->
+    <!--  -->
+    <div class="box"></div>
+</body>
+</html>

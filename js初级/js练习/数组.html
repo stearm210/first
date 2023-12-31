@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //方法一
+        var arr=new Array();//创建一个空数组
+        //方法二
+        var arr=[];//创建空数组
+        var arr1=[1,2,3]
+        console.log(arr1);
+        console.log(arr1[2]);
+        //遍历
+        for(var x=0;x<3;x++){
+            console.log(arr1[x]);
+        }
+        //长度
+        console.log(arr1.length);
+
+        //数组新增长度,修改数组长度,然后通过索引添加即可
+        var b=['red','green','blue'];
+        b.length=5;
+        console.log(b);
+
+        //将数据从老数组筛选存入新数组时常常使用的方法
+        var arr=[2,3,0,0,9]
+        var newarr=[];
+        for(var i=0;i<arr.length;i++){
+            //由于arr[i]加入了新数组，newarr的长度就会自动加一。
+            newarr[newarr.length]=arr[i];
+        }
+        console.log(newarr);
+
+        
+
+        //冒泡排序
+        var arr=[2,34,5,4,3];
+        for(var i=0;i<arr.length-1;i++){
+            for(var j=0;j<arr.length-1-i;j++){
+                if(arr[j]>arr[j+1]){
+                    var temp=arr[j];
+                    arr[j]=arr[j+1];
+                    arr[j+1]=temp;
+                }
+            }
+        }
+        console.log(arr);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

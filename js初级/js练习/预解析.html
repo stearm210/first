@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //注意一个问题:
+        var a=b=c=9;
+        //这里相当于:var a=9. b=9,c=9. 其中b和c在函数内部赋值时是全局变量.
+
+        
+        //问题一
+        console.log(num);
+        var num=10;//输出的值是undefined
+        //相当于执行一下代码
+        var num;
+        console.log(num);
+        num=10;
+
+
+        //问题二
+        fun();//报错为预解析
+        var fun=function(){
+            console.log(11);
+        }
+        //相当于执行一下代码
+        var fun;
+        fun();
+        fun=function(){
+            console.log(22);
+        }
+
+
+        //js运行先进行预解析,然后代码执行.
+        //var和function会提升到当前作用域的最前面
+        //代码执行是按照代码的书写顺序从上往下执行
+        //分为变量预解析,函数预解析. 变量预解析是变量提升到作用域最前面. 函数预解析是将函数的声明提升到当前作用域最前面
+
+        //例子,输出的结果是undefind
+        var num=10;
+        function fun(){
+            var num=20;
+            console.log(num);;
+        }
+        //相当于以下执行
+        var num;
+        function fun(){
+            var num;
+            console.log(num);
+            num=20;
+        }
+        num=10;
+        fun();
+
+
+
+        //例子二,结果是:undefind,20
+        var num=10;
+        function fn(){
+            console.log(num);
+            var num=20;
+            console.log(num);
+        }
+        fn();
+        //相当于以下代码
+        var num;
+        function fn(){
+            var num;
+            console.log(num);
+            num=20;
+            console.log(num);
+        }
+        num=10;
+        fn();
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

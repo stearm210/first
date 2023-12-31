@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .banner{
+            position: relative;
+            /* 单一标签可以使用margin:0 auto 进行居中 */
+            margin: 0 auto;
+            width: 1226px;
+            height: 600px;
+
+        }
+        .mask{
+            position: absolute; 
+            left: 0;
+            bottom: 0;
+            /* 绝对定位之后会将盒子的类型改变成为行内块，如果没有写宽度或者高度就不会显示盒子 */
+            /* 因此建议盒子的宽度和高度都需要写上 */
+            width: 1226px;
+            /* 这个宽度如果与父级是一样的，可以写成width:100%。 */
+            height: 150px;
+            /* 半透明颜色使用rgba设置 */
+            background-color: rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <img src="../图片/bg.jpg" alt="">
+        <div class="mask"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+        /* 本来想象中的结果应该是上下两个盒子的间距变成100px，但是最终只有50px。这表明上下的margin会合并，只剩下50px */
+        /* 如果两个盒子之间的间隔属性都写了下面的代码，那么会取两者之间的最大值,比如下面的间距是100px*/
+        .box1{
+            margin-bottom: 100px;
+        }
+        .box2{
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">11</div>
+    <div class="box2">11</div>
+</body>
+</html>

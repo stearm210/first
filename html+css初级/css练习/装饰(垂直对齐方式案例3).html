@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father{
+            /* 注意，这里高度没有设置。 */
+            /* 浏览器在识别的时候，将father与img都按照文字样式进行识别，
+            这样会导致father按照默认方式对齐，图片的下面还会突出一条线 */
+            /* 这个时候需要进行垂直对齐装饰 */
+            width: 400px;
+            background-color: pink;
+            
+        }
+        img{
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <img src="../图片/1.jpg" alt="">
+    </div>
+</body>
+</html>

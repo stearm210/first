@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            /* 相对定位 */
+            /* 这个时候盒子会相对以前的位置进行移动 */
+
+            /* 移动之后的标签还是保存有原来的标签特性 */
+            /* 相对定位之后原来的位置无法被其它东西占用，原来的位置还在(不会脱标) */
+            /* 如果只是单写一个position:relative  这个盒子不会移动(不会脱标) */
+            position: relative;
+            /* 这里的意思是距离参照物左边100px，顶部200px的位置 */
+            left: 100px;
+            top: 200px;
+            /* 注意,如果左右上下都出现，只会以左和上为准*/
+
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <!-- 相对定位 -->
+    <!-- 相对于自己之前的位置移动的定位方式 -->
+    <!-- 代码段是：position:relative -->
+    <!-- 需要配合方位属性进行定位，使用的范围一般为小范围定位 -->
+    <p>测试nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn</p>
+    <p>测试nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn</p>
+    <p>测试nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn</p>
+    <p>测试nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn</p>
+    <p>测试nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn</p>
+    <p>测试nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn</p>
+    <div class="box">box</div>
+    <p>测试nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn</p>
+    <p>测试nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn</p>
+    <p>测试nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn</p>
+    <p>测试nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn</p>
+    <p>测试nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn</p>
+    <p>测试nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn</p>
+</body>
+</html>

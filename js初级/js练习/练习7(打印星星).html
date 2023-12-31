@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 像这种连续变量，建议使用字符串叠加的方式输出 -->
+    <script>
+        // var num=5;
+        // var star='';
+        // for(var i=0;i<num;i++){
+        //     star+='☆'
+        // }
+        // console.log(star);
+
+        // 打印n行n列星星
+        // var star='';
+        // var n=5;
+        // for(var i=0;i<n;i++){
+        //     for(var j=0;j<n;j++){
+        //         star+='☆';
+        //     }
+        //     // 换行即可
+        //     star+='\n';
+        // }
+        // console.log(star);
+
+
+        // 倒三角星星
+        // 逐渐减少，建议使用内层循环
+        var star='';
+        var n=10;
+        var j;
+        for(var i=0;i<n;i++){
+            for(j=i;j<n;j++){
+                star+='☆';
+            }
+            star+='\n';
+        }
+        console.log(star);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

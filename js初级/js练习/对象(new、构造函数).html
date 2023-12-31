@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //创建对象(构造函数) 构造函数名字首字母需要大写
+        //可用使用函数的方法创建多个对象
+        //构造函数不需要用return返回结果,会自动返回对象
+        //构造函数需要使用new调用
+        
+        function Hanshu(name,age,sex){//调用函数之后返回的是一个对象
+            this.name=name;
+            this.age=age;
+            this.sex=sex;
+            //构造函数中的函数定义
+            this.sing=function(sang){
+                console.log(snag);
+            }
+        }
+        var x=new Hanshu('对',2222,'男');//传入参数
+        // console.log(typeof x);//输出对象
+        console.log(x.age);
+        var y=new Hanshu('看',89,'男');
+        console.log(y.age);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

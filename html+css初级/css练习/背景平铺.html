@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 600px;
+            height: 600px;
+            /* background-image是背景图加上图片的代码 */
+            /* 但是打开浏览器会发现，图片多了一张。这是因为图片的尺寸不匹配你设置的盒子的大小，于是就会多一张图片进行填充 */
+            background-image: url(../图片/emmet快速写法.png);
+            background-color:pink;
+
+
+            /* 对于图片由于尺寸原因的多出几张，这个时候需要将背景进行平铺 */
+            /* 这个时候使用background-repeat进行背景的平铺 */
+            /* background-repeat: repeat; */
+
+
+            /* background-repeat: no-repeat; */
+            /* 这个no-repeat的意思就是不进行平铺，只有一张图片 */
+
+
+            background-repeat: repeat-x;
+            /* 这里的意思是将图片水平方向平铺 */
+        }
+    </style>
+</head>
+<body>
+    <div>文字</div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 刚开始两个input是没有对齐的，这个时候需要加上vertical-align */
+        input{
+            height:50px;
+            /* 设置动态盒子 */
+            box-sizing: border-box;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <!-- 浏览器解析文字的时候默认使用基线来对齐 -->
+    <!-- 浏览器处理行内标签与行内块标签的时候默认按照文字进行解析 -->
+    <!-- 一般使用属性: vertical-align -->
+    <!-- 属性值有：baseline--默认基线对齐    top--顶部对齐    middle--中部对齐    bottom--底部对齐 -->
+
+    <!-- 垂直对齐方式一般用于解决文字与图片(或者行内块标签、行内标签等)在一行显示时不对齐的情况 -->
+    <input type="text"><input type="button" value="搜索">
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //创建对象(第一种方法)
+        //var obj={};//创建空对象
+        var obj={
+            name:'对',
+            age:18,
+            sex:'男',
+            hanshu: function(){
+                console.log('函数名字是hanshu');
+            }
+        }
+        //属性和方法使用键值对的方法
+        //多个属性方法使用逗号隔开
+        //方法冒号后面是一个匿名函数
+        //调用属性名.
+        console.log(obj.age);
+        //或者
+        console.log(obj['age']);
+        //方法调用
+        obj.hanshu();
+
+
+
+
+        //创建对象(第二种方法)
+        var obj=new Object();//创建一个空对象
+        //属性
+        obj.name='张';
+        obj.age=18;
+        obj.sex='男';
+        obj.hanshu=function(){
+            console.log('创建方法');
+        }
+        console.log(obj.age);
+        //或者
+        console.log(obj['age']);
+        //方法调用
+        obj.hanshu();
+
+
+        //创建对象(构造函数) 构造函数名字首字母需要大写
+        //可用使用函数的方法创建多个对象
+        //构造函数不需要用return返回结果
+        //构造函数需要使用new调用
+        function Hanshu(name,age,sex){//调用函数之后返回的是一个对象
+            this.name=name;
+            this.age=age;
+            this.sex=sex;
+            //构造函数中的函数定义
+            this.sing=function(sang){
+                console.log(snag);
+            }
+        }
+        var x=new Hanshu('对',2222,'男');//传入参数
+        // console.log(typeof x);//输出对象
+        console.log(x.age);
+        var y=new Hanshu('看',89,'男');
+        console.log(y.age);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

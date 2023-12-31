@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 使用绝对定位的盒子不能使用左右margin auto居中 */
+
+        .box{
+            /* 水平居中方法 */
+            position: absolute;
+            /* 取参照物(浏览器)的50%)，将盒子的左边框与浏览器左边框相距浏览器的一半，也就是盒子左边框在浏览器中心 */
+            left: 50%;
+            /* margin-left: -150px; */
+            /* 此时盒子偏右，需要将盒子左移 */
+            /* 注意：margin-left是指距离边框左边-150px,表现为向左移动 */
+            /* 由于之前盒子的左边框已经在浏览器的一半位置，这个时候需要将盒子向左移动盒子的一半长度达到居中效果 */
+            
+
+
+            /* 垂直居中(与上面一样) */
+            top: 50%;
+            /* margin-top: -150px; */
+
+
+
+            /* 同时还有一个新的自动算宽高的方法(常用于CSS3) */
+            /* 这里会位移自己宽度与高度的一半 */
+            /* 格式：
+            transform:translate(水平位移量，垂直位移量)
+
+            取值：水平位移量为正，向右移动，垂直方向的方向为下。只写一个值，表示水平位移量。
+            参数为百分比的话，是相对于自身的宽高。
+            位移只是一种视觉效果，不会对别的盒子造成影响。*/
+            /* 于是这里的意思是向左向上位移盒子高度宽度的一半 */
+            transform: translate(-50%,-50%);
+            
+
+
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

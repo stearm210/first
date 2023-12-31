@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 直接使用font加上冒号后面写上多个属性，每个属性使用空格隔开 */
+
+
+        /* 这种写法的取值是有顺序的 */
+        /* 顺序是：  style weight   size    family */
+        /*        是否倾斜 是否加粗 字体大小 字体类型 */
+        /* 如果要省略的话，只能省略前面两个 */
+        p{
+            font: italic 700 66px 宋体;
+            /* 注意，可以在后面再次执行一次，单独设置 */
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <!-- 使用复合属性font将所有的字体属性写在一起 -->
+    <p>这是p标签</p>
+</body>
+</html>

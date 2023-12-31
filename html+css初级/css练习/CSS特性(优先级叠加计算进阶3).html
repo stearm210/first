@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 发现下面这两个选择器都是继承属性，这个时候看字是先继承于哪个标签 */
+        /* 下面观察发现，span先继承p标签，所以为红色 */
+        div p{
+            color: red;
+        }
+        .father{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <p class="son">
+            <span>什么颜色</span>
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* (0,2,0,0) */
+        #father #son{
+            color: blue;
+        }
+
+        /* (0,1,1,1) */
+        #father p.c2{
+            color: black;
+        }
+
+        /* 这个不是继承 */
+        /* (0,0,2,2) */
+        div.c1 p.c2{
+            color: red;
+        }
+
+        /* 继承，权重最低，不考虑。这里有一个!important，但是这个!important是在继承属性下的，因此权重不能是最高的 */
+        #father{
+            color: green !important;
+        }
+
+        /* 这个也是继承，权重最低 */
+        #div#father.c1{
+            color: yellow;
+        }
+
+        /* 综合上面的优先级判断，第一个优先级最高，显示蓝色 */
+    </style>
+</head>
+<body>
+    <!-- 如何判断是不是继承？ -->
+    <!-- 首先看字在哪个标签里面，如果css中选择器只是选中了父级标签，而没有单独选中字，那么就是继承。如果可以直接选中字，那么就不是继承-->
+    <div id="father" class="c1">
+        <p id="son" class="c2">
+            这是什么颜色
+        </p>
+    </div>
+</body>
+</html>

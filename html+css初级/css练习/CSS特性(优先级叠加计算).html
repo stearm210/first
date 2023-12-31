@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* (0,1,0,1) */
+        div #one{
+            color: orange;
+        }
+        /* (0,0,2,0) */
+        .father .son{
+            color: skyblue;
+        }
+        /* (0,0,1,1) */
+        .father p{
+            color: purple;
+        }
+        /* (0,0,0,2) */
+        div a{
+            color: pink;
+        }
+        /* 比较上面四个之后，第一个会生效，优先级最高 */
+    </style>
+</head>
+<body>
+    <!-- 如果使用复合选择器，这个时候需要通过权重叠加的计算方法判断哪个选择器优先级最高会生效 -->
+
+    <!-- 首先判断是否是继承，然后再进行优先级的计算。继承的优先级最低-->
+    
+    <!-- 叠加公式： (行内样式个数，id选择器个数，类选择器个数，标签选择器个数) -->
+
+    <!-- 比较规则：统计个数，先比较第一级的个数，如果比较出来，后面都不用看，以此类推。如果所有的数字都相同，就比较层叠性(谁在最下面，谁说的算)。注意，如果limportant如果不是继承，则权重最高 -->
+    <div class="father">
+        <p class="son" id="one">我是一个标签</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 结构伪类选择器适用于多个相同标签的选择问题 -->
+
+    <!-- 假如每个li的样式都是不一样的，如果想改变其中某些li的样式，按照以前的方法，需要写很多类进行选择。这个时候可以使用结构伪类选择器进行选择更加快 -->
+    <style>
+        /* 选择第一个li */
+        li:first-child{
+            background-color: pink;
+        }
+
+        /* 找到第四个 */
+        li:nth-child(4){
+            background-color: red;
+        }
+
+        /* 使用公式选中偶数 */
+        li:nth-child(2n){
+            background-color: aqua;
+        } 
+
+        /* 选中前3个 */
+        li:nth-child(-n+3){
+            background-color: black;
+        }
+
+        /* 选中4的倍数 */
+        li:nth-child(4n){
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- 一般适用于查找元素的操作 -->
+    <!-- 选择器：1. E:first-child() 匹配父元素中的第一个子元素，并且是E元素 -->
+    <!-- 2. E:last-child()  匹配父元素中最后一个子元素，并且是E元素 -->
+    <!-- 3. E:nth-child(n)  匹配父元素第n个元素，并且是E元素 -->
+    <!-- 4. E:nth-last-child(n) {}  匹配父元素中倒数第n个子元素，并且是E元素 -->
+
+    <!-- 当然，如果想简化书写代码，可以再括号内部写数学公式,          n从0开始 -->
+    <!-- 1.偶数 2n、even -->
+    <!-- 2.奇数 2n+1、2n-1、odd -->
+    <!-- 3.找到前5个 -n+5 s-->
+    <!-- 4.找到从第5个往后 n+5 -->
+
+    <!-- ul>li{这是第$个li}*8 -->
+    <ul>
+        <li>这是第1个li</li>
+        <li>这是第2个li</li>
+        <li>这是第3个li</li>
+        <li>这是第4个li</li>
+        <li>这是第5个li</li>
+        <li>这是第6个li</li>
+        <li>这是第7个li</li>
+        <li>这是第8个li</li>
+    </ul>
+</body>
+</html>

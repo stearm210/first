@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .box{ */
+            /* 绝对定位 */
+            /* 移动之后的标签还是保存有原来的标签特性 */
+            /* 注意,如果左右上下都出现，只会以左和上为准*/
+            /* 定位流程 */
+            /* 1.先找已经定位的父级(注意，这个父级已经定位) ，如果有，就以这个父级作为参照物进行定位
+               2.如果有父级，但是父级没有定位，就以浏览器窗口为参照进行定位
+               */
+
+            /* 如果单写一个position:absolute ,盒子的位置会被其它东西占有(脱标) */
+            /* position: absolute; */
+            /* 这里的意思是现在的位置距离参照物左边50px */
+            /* left: 50px; */
+            /* 如果left、top等取得数字为0，就会默认父级没有定位，这个时候就会以浏览器为参照进行定位 */
+            /* 同时这个时候也会改变原本标签的显示模式的特点(块级模式、行内模式改变) */
+        /* } */
+
+        /* 下面这个是父级没有定位时 */
+        /* 这个时候子级会以浏览器为参照物 */
+
+
+        /* .father {
+            width: 300px;
+            height: 300px;
+            background-color:pink;
+            margin: 100px;
+        }
+        .son {
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+            position: absolute;
+            left: 20px;
+            top: 20px;
+        } */
+
+
+        
+        /* 下面这个是父级有定位时 */
+        /* 这个时候子级会以父级为参考物 */
+        .father {
+            width: 300px;
+            height: 300px;
+            background-color:pink;
+            margin: 100px;
+            position: relative;
+        }
+        .son {
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+            position: absolute;
+            left: 20px;
+            top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 绝对定位 -->
+    <!-- 语法：position:absolute -->
+    <!-- 默认相对于浏览器可视区域进行移动 -->
+    <div class="father">
+        <div class="son"></div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+        }
+        .one{
+            position: absolute;
+            /* 绝对定位不占位置 */
+            left: 20px;
+            top: 50px;
+            background-color: pink;
+            /* 如果想让粉色显示在上面时 */
+            z-index: 1;
+        }
+        .two{
+            position: absolute;
+            left: 50px;
+            top: 100px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- 不同布局方式元素的层级关系为： 标准流<浮动<定位 -->
+    <!-- 相对定位、绝对定位、固定定位默认层级相同 -->
+    <!-- 在HTML中写在下面的元素层级更高会覆盖上面的元素 -->
+    <div class="one">one</div>
+    <div class="two">two</div>
+    <!-- 由于两个类的div标签都进行了定位，而且这两个标签的层级是相同的 -->
+    <!-- 这个时候后面写的two类会压在前面的one类上面 -->
+    <!-- 也可以通过设置属性：z-index:整数。  来控制哪个类显示在上面。整数越大，显示顺序越上。整数默认值是0 -->
+    <!-- z-index属性需要配合定位进行使用，否则不会生效 -->
+</body>
+</html>

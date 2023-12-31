@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 这里的div标签占用的行数过多，使用margin:0 auto; 方法进行居中*/
+        div{
+            width: 800px;
+            height: 700px;
+            background-color: darkorange;
+            margin: 0 auto;
+        }
+        /* 下面是对div中的文字进行操作 */
+        /* 由于后面多次使用到p标签，建议使用类进行区分 */
+        .one{
+            text-align: center;
+        }
+        .color1{
+            color: #808080;
+        }
+        .color2{
+            color: burlywood;
+            font-weight: 700;
+        }
+        a{
+            text-decoration: none;
+        }
+        .second{
+            text-indent: 2em;
+        }
+    </style>
+</head>
+<body>
+    <!-- 由于已经将div进行居中操作了，这个时候建议向div标签中写入文字 -->
+    <div>
+        <!-- 可以在p标签中写入其它标签 -->
+        <h1 class="one">自然</h1>
+        <p class="one">
+            <span class="color1">aa</span>
+            <span class="color2">bb</span>
+            <a href="#">收藏</a>
+        </p>
+        <hr>
+        <p class="second">
+            金，形声字。《说文》：“五色金也，黄为之长。......生于土，从土，左右注，象金在土中形，今声。”《说文》关于“金”字形体结构的分析，只符合《说文》篆文的形体结构而不符合西周金文特别是西周早期金文“金”字的形体结构。《说文》所说的金字本义为“五色金也，黄为之长”，即：白（白金，即银）、青（青金、即铅）、
+        </p>
+    </div>
+</body>
+</html>

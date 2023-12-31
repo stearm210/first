@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+
+            border-radius: 100px;
+            /* 或者可以取50%，而且最大也只能取50% */
+            border-radius: 50%;
+        }
+        .two{
+            width: 300px;
+            height: 200px;
+            background-color: blue;
+            border-radius: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 边框圆角的常见应用有以下 -->
+    <!-- 画一个正圆：1.盒子必须是正方形的  2.设置边框圆角为盒子宽高的一半--border-radius:50%  -->
+    <!-- 胶囊按钮：1.盒子必须是长方形  2.设置border-radius 是盒子高度的一半 -->
+    <div class="one"></div>
+    <div class="two"></div>
+</body>
+</html>

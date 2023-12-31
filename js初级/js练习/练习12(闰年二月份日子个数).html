@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function out(){
+            var year=prompt('输入年份:');
+            var x=hanshu(year);
+            if(x){
+                alert('二月份29天');
+            }else{
+                alert('二月份28天');
+            }
+        }
+        out();
+        function hanshu(a){
+            flag=true;
+            if((a%4==0 && a%100!=0) || a%400==0){
+                return true;
+            }else{
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            /* 所有标签可以进行内减 */
+            box-sizing: border-box;
+        }
+        .news{
+            width: 500px;
+            height: 400px;
+            border: 1px solid #cccccc;
+            /* 版心居中，与上面留50px的位置 */
+            margin: 50px auto;
+            /* 内边距 */
+            padding: 42px 30px 0;
+        }
+        .news h2{
+            border-bottom: 1px solid #cccccc;
+            /* height: 20px; */
+            font-size: 30px;
+            /* line-height: 20px; */
+            /* 底部间距 */
+            padding-bottom: 9px;
+        }
+
+        /* 这种多行内容一般推荐使用列表更方便 */
+        ul{
+            /* 去除无序列表前面的圆点 */
+            list-style: none;
+        }
+        .news li{
+            /* 这里的height用于控制一行的高度 */
+            height: 50px;
+            border-bottom: 1px dashed #cccccc;
+            /* 这里的line-height用于控制字与顶部的距离 或者是垂直居中,一般与height的值一样*/
+            line-height: 50px;
+            /* 用于描述左间距 */
+            padding-left: 28px
+        }
+        .news a{
+            text-decoration: none;
+            font-size: 18px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="news">
+        <h2>新闻标题,最新文章</h2>
+        <ul>
+            <li><a href="#">体验</a></li>
+            <li><a href="#">体验</a></li>
+            <li><a href="#">体验</a></li>
+            <li><a href="#">体验</a></li>
+        </ul>
+    </div>
+</body>
+</html>

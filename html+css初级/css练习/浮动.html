@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 设置图文转换
+        img{
+            /* 图片在左边，文字环绕 */
+            /* float: left; */
+        /* } */
+
+        /* 网页布局，一行显示 */
+        div{
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+        }
+        .one{
+            background-color: pink;
+            /* 图片在左边 */
+            float: left;
+        }
+        .two{
+            background-color: red;
+            /* 图片在右边 */
+            float: right;
+            /* 如果float都设置为left时，两个块会紧紧相邻没有空隙 */
+        }
+    </style>
+</head>
+<body>
+    <!-- 浮动的作用是为了让块级标签在一行进行排列，用于网页布局 -->
+    <!-- 如果像下面这样换行书写，就会在两个块之间产生间距 -->
+    <!-- 如果不想再两个块之间产生间距需要将两个div一行书写 -->
+    <!-- 这个时候建议不适用行内块标签，建议使用浮动解决 -->
+
+    <!-- <div class="one">1111</div>
+    <div class="two">1111</div> -->
+
+    <!-- 浮动的使用场景可以有：1.图文转换
+    <img src="../图片/emmet快速写法.png" alt="">
+    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+
+    <!-- 2.网页布局：块在一行排列 -->
+    <div class="one">one</div>
+    <div class="two">two</div>
+</body>
+</html>

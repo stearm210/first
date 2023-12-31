@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+        }
+        /* .one{
+            /* 这个是占位隐藏效果，不常使用 */
+            /* visibility: hidden; */
+
+
+            /* display不是占位隐藏，经常使用 */
+            /* display: none;
+
+            background-color: pink; */
+        /* }  */
+        .two{
+            background-color: green;
+        }
+
+
+        /* 由于是需要隐藏图片，需要在图片类中进行隐藏 */
+        .pic{
+            display: none;
+        }
+        /* 如果需要实现鼠标悬停时显示图片 */
+        /* 在hover后面记得加上一个img,表示显示a中的图片 */
+        .two a:hover img{
+            /* 使用display:block 用于悬停时显示图片 */
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- 让某些元素本身在屏幕中不可见。比如：鼠标hover之后元素隐藏 -->
+    <!-- 常见的属性: 1.visibility:hidden   2.display:none -->
+    <!--  -->
+    <!-- <div class="one">one </div> -->
+    <div class="two">
+        <a href="#">中学<img src="../图片/1.jpg" alt="" class="pic"></a>
+    </div>
+</body>
+</html>

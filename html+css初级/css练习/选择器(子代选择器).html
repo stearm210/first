@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 这是后代选择器，这样的话div中的两个a都会改变颜色 */
+
+        /*div a{
+            color: red;
+         } */
+
+        /* 但是子代选择器可以要求选择其中一个a标签 */
+        /* 下面这样子会将儿子中的a变成红色，而不是p中的a变成红色 */
+        /* div>a {
+            color: red;
+        } */
+
+
+        /* 而下面这种写法会将p中的a变成红色，而儿子中的a不会变成红色 */
+        p>a{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 子代选择器语法： 选择器1>选择器2 -->
+    <!-- 在选择器1的后代中,找到满足选择器2的标签. -->
+    <!-- 注意,选择器2不一定是选择器1的儿子,有可能是孙子 -->
+    <div>
+        父级
+        <a href="#">这是div中的a</a>
+        <p>
+            <a href="#">这是div中的p中的a</a>
+        </p>
+    </div>
+</body>
+</html>

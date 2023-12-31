@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 类选择器的一般结构是： .类名  */
+        /* 名字由数字、字母、下划线、中划线组成，但是数字不要放在前面 */
+        /* 下面定义两个类 */
+        .one{
+            color: rgb(255, 0, 115);
+        }
+        .second{
+            color: blue;
+        }
+        .three{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 不同段落调用类的时候需要在p标签里面写上对应的类名   class="类名" -->
+    <!-- 注意，p标签会自动换行 -->
+    <!-- 使用多个类名的时候直接在class中加上增加的类名 -->
+    <p class="one three">这里调用one类</p>
+    <p class="second">这里调用second类</p>
+</body>
+</html>

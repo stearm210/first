@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* id选择器 */
+        #box{
+            color: aqua;
+        }
+        .box{
+            color: blue;
+        }
+        body{
+            color: red;
+        }
+        div{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- 不同的选择器有不同的优先级，优先级高的会覆盖优先级低的选择器 -->
+    <!-- 优先级公式：继承<通配符选择器<标签选择器<类选择器<id选择器<行内样式<limportant -->
+    <!-- 选择范围越广，优先级越低 -->
+
+    <!-- 在div中写颜色是行内式优先级 -->
+    <div class="box" id="box" style="color: pink;">测试优先级</div>
+</body>
+</html>

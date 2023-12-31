@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .one{
+            margin: 0 auto;
+            width: 1226px;
+            height: 614px;
+            /* background-color: red; */
+        }
+        .left{
+            float: left;
+            width: 234px;
+            height: 614px;
+            background-color: #800080;
+        }
+        .right{
+            float: right;
+            width: 978px;
+            height: 614px;
+            /* background-color: green; */
+        }
+        /* 去除ul的li中前的圆点 */
+        ul{
+            list-style: none;
+        }
+        .right li{
+            float: left;
+            /* 对li 进行操作 */
+            margin-right: 14px;
+            margin-bottom: 14px;
+            /* 这个时候li会换行 */
+            width: 234px;
+            height: 300px;
+            background-color: #87ceed;
+        }
+        /* 第四个与第8个li的右边间距需要除去 */
+        .right li:nth-child(4n){
+            margin-right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">
+        <div class="left"></div>
+        <div class="right">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

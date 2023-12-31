@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        /* 控制文字的属性儿子可以继承比如color和font-size。不是控制文字的属性如height儿子不能继承 */
+        div{ */
+            color: red;
+            font-size: 30px;
+            height: 300px;
+            /* height是控制段落高的 */
+        }
+    </style>  -->
+
+
+    <!-- 注意事项，超链接a这种自带颜色的标签不会继承父级标签 -->
+    <!-- 同时，h标签这种有自己大小的标签不会继承父级标签 -->
+    <style>
+        div{
+            color:red;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 类似于面向对象的特性 -->
+    <!-- 文字控制属性都可以继承可以继承的常见属性有：color、font的四个属性、text-indent(缩进)、text-align(水平居中)、lint-height(行高) -->
+    <div>
+        <a href="#">这是超链接</a>
+        <h1>一级标题</h1>
+    </div>
+</body>
+</html>

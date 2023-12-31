@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 层叠性 */
+        /* 下面的color中会选择green将red进行覆盖 */
+        /* 当样式冲突时，只有当选择器优先级相同时，才能通过层叠性判断结果 */
+        div{
+            color:red;
+            color: green;
+        }
+        .box{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">文字</div>
+</body>
+</html>

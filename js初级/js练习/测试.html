@@ -1,0 +1,34 @@
+<!-- 一般来说，在HTML中推荐使用双引号，在JS中推荐使用单引号 -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- script一般在上面的部分进行书写 -->
+    <!-- 2.内嵌式js,在script中书写 -->
+    <!-- 内嵌式一般是打开网页之后会弹出信息 -->
+    <!-- 输出的文字用alert书写 -->
+    <!-- 这里的意思就是打开网页之后弹出 "对的" -->
+    <script>
+        // alert('对的')
+    </script>
+
+
+    <!-- 3.外嵌式。在外面引入js文件，使用script进行输出 -->
+    <!-- 打开网页之后就会弹出对应的信息显示 -->
+    <!-- 注意：外嵌式不允许在script之间写东西 -->
+    <script src="测试.js"></script>
+</head>
+<body>
+    <!-- 1.行内式js,在html中写 -->
+    <!-- onclick是点击的意思，一般是点击按钮之后会发生什么 -->
+    <!-- onclick中的alert()是弹出框的意思,框内写上需要弹出的文字 -->
+
+    <input type="button" value="长" onclick="alert('度')">
+
+</body>
+</html>

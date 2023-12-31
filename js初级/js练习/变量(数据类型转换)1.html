@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //1. 转换为字符串
+        // .toSring()、String()强制转换。或者加号拼接字符串。
+        var num=10;
+        var str=num.toString();
+        console.log(typeof str);
+
+        var str=String(str);
+        console.log(typeof str);
+
+        // 2.转换为数字型
+        // parseInt()、parseFloat()、Number()。
+        // 小数转换为整数时一般是向下取整
+        var age=prompt('输入年龄');
+        console.log(typeof parseInt(age));
+
+        // parseInt也可以将像素的px单位去除
+        console.log(parseInt('120px'));
+
+        // 小数
+        console.log(parseFloat('3.14'));
+
+        //3.NUmber
+        var str='123';
+        console.log(Number(str));
+
+        // 4.算数运算(隐式转换为数字类型)
+        console.log('12'- 0);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

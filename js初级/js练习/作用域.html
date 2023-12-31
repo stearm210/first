@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //如果变量在函数内部没有声明,那么会直接变成全局变量.其它与c语言类似.
+        var num=10;
+        function fn(){
+            var num=20;
+            function fun(){
+                console.log(num);
+            }
+        }
+        fn();//此时,fun函数会根据就近原则调用num=20;
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

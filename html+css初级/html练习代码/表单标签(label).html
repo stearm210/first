@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 这个功能一般用于选择性别的时候可以点击文字即可选择，可以不用点击原点，增加点中概率 -->
+    <!-- 这里需要在input中添加一个id属性。同时还需要在input后面添加一个label标签，这个label标签中需要添加一个for属性，这个for属性的值需要与id属性的值是一样的-->
+    <!-- 注意，男和女的显示选项需要包裹在label标签之中 -->
+    性别:
+    <input type="radio" name="sex" id="nan"><label for="nan">男</label>
+    <input type="radio" name="sex" id="nv"><label for="nv">女</label>
+    <br>
+    <br>
+    <!-- 方法二，直接使用label将Input包裹起来 -->
+    <!-- 建议方法二 -->
+    <label><input type="radio" name="sex">男</label>
+    <label><input type="radio" name="sex">女</label>
+</body>
+</html>
